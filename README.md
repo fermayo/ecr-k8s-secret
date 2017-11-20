@@ -1,6 +1,6 @@
-# AWS ECR credential secret generator for Kubernetes
+# Kubernetes secret generator for AWS ECR credentials
 
-Automatically creates a Kubernetes secret to pull images from AWS ECR using your AWS credentials
+Automatically creates a [Kubernetes](https://kubernetes.io/) secret to pull images from [AWS ECR](https://aws.amazon.com/ecr/) using your AWS credentials
 
 ## Usage
 
@@ -10,7 +10,7 @@ Requirements:
 
 Run:
 
-    curl -LSs https://github.com/fermayo/ecr-k8b-secret/raw/master/gen-secret.sh | bash -
+    curl -LSs https://github.com/fermayo/ecr-k8s-secret/raw/master/gen-secret.sh | bash -
 
 
 This will automatically create a secret called `aws-ecr-credentials` that you can use on your Pod definition:
